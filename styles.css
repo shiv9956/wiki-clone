@@ -1,0 +1,178 @@
+/* ========== BASE ========== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f8f9fa;
+  color: #202122;
+  line-height: 1.6;
+}
+a { color: #0645ad; text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { padding-left: 20px; margin: 6px 0; }
+
+/* ========== HEADER ========== */
+header {
+  background: #fff;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #a2a9b1;
+}
+header .logo { display: flex; align-items: center; font-size: 22px; font-weight: bold; }
+header .logo img { height: 40px; margin-right: 8px; }
+header .search { display: flex; align-items: center; }
+.search input[type="search"] {
+  padding: 4px 8px; font-size: 14px; border: 1px solid #a2a9b1;
+  border-radius: 2px 0 0 2px;
+}
+.search button {
+  padding: 4px 8px; font-size: 14px; border: 1px solid #a2a9b1;
+  border-left: none; border-radius: 0 2px 2px 0; background: #f8f9fa; cursor: pointer;
+}
+
+/* ========== NAVIGATION ========== */
+.tabs {
+  background: #fff;
+  border-bottom: 1px solid #a2a9b1;
+  padding: 0 16px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.tabs a { padding: 8px 4px; font-size: 14px; }
+
+/* ========== MAIN CONTENT LAYOUTS ========== */
+.content {
+  max-width: 1000px;
+  margin: 16px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Two-column wrapper (events page) */
+.wrapper {
+  display: flex;
+  max-width: 1000px;
+  margin: 16px auto;
+  gap: 16px;
+}
+.left-box, .right-box {
+  background: #fdfdfd;
+  border: 1px solid #a2a9b1;
+  padding: 16px;
+}
+.left-box { flex: 2; }
+.right-box { flex: 1; }
+
+/* Welcome (index.html) */
+.welcome-box {
+  max-width: 1000px;
+  margin: 16px auto;
+  background: #fdfdfd;
+  border: 1px solid #a2a9b1;
+  padding: 24px;
+  text-align: center;
+}
+.welcome-box h1 { margin: 0 0 8px 0; font-size: 24px; }
+.welcome-box p { margin: 4px 0; font-size: 14px; }
+
+/* ========== SECTIONS ========== */
+.section {
+  border: 1px solid #a2a9b1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.subsection { padding: 8px; flex: 1; }
+.subsection img { max-width: 120px; height: auto; border: 1px solid #a2a9b1; }
+.float-left { float: left; margin: 4px 8px 4px 0; }
+.float-right { float: right; margin: 4px 0 4px 8px; }
+
+/* Color-coded section styles */
+.section--left { background: #f5fff5; border-color: #97c6a3; }
+.section--left .subsection h3 {
+  margin: 0; padding: 6px 8px; font-size: 15px; font-weight: bold;
+  background: #cef2e0; border-bottom: 1px solid #97c6a3;
+}
+.section--right { background: #f5faff; border-color: #9fb4d3; }
+.section--right .subsection h3 {
+  margin: 0; padding: 6px 8px; font-size: 15px; font-weight: bold;
+  background: #cedff2; border-bottom: 1px solid #9fb4d3;
+}
+
+/* Disclaimer / Privacy / Conduct variations */
+.section h2 { margin: 0; padding: 12px; font-size: 20px; }
+.section p { padding: 0 16px; margin-bottom: 12px; line-height: 1.6; }
+.section ul { padding-left: 40px; margin-bottom: 12px; }
+
+.section--policy h2 { background: #fef6e7; border-bottom: 1px solid #e2c080; }
+.section--privacy h2 { background: #e7f3fe; border-bottom: 1px solid #a2c2e2; }
+.section--conduct h2 { background: #cef2e0; border-bottom: 1px solid #97c6a3; }
+
+/* ========== FEATURED PICTURE (index) ========== */
+.featured-picture {
+  max-width: 1000px; margin: 16px auto;
+  background: #faf5ff; border: 1px solid #c8a2c8; padding: 12px;
+}
+.featured-picture h3 {
+  margin: 0; padding: 6px 8px; font-size: 15px; font-weight: bold;
+  background: #e6d5f5; border-bottom: 1px solid #c8a2c8;
+}
+.featured-picture img { display: block; margin: 12px auto; max-width: 300px; height: auto; }
+.featured-picture p { font-size: 14px; line-height: 1.5; }
+.featured-picture small { font-size: 12px; color: #555; }
+
+/* ========== ARTICLE PAGE (proceratosaurus) ========== */
+.main-container {
+  max-width: 1000px; margin: 16px auto;
+  display: grid; grid-template-columns: 1fr 320px;
+  gap: 20px; padding: 0 16px;
+}
+.article-content {
+  background: #fff; padding: 20px;
+  border: 1px solid #a7d7f9; border-radius: 2px;
+}
+.article-title { border-bottom: 1px solid #a2a9b1; padding-bottom: 8px; margin-bottom: 16px; }
+.article-title h1 { margin: 0; font-size: 28px; font-weight: normal; }
+.article-title p { margin: 4px 0; font-style: italic; color: #54595d; }
+
+.infobox {
+  background: #f8f9fa; border: 1px solid #a2a9b1; border-collapse: collapse;
+  margin: 0 0 16px 16px; font-size: 14px; line-height: 1.4;
+  width: 100%; float: right; clear: right;
+}
+.infobox caption {
+  font-weight: bold; font-size: 1.2em; text-align: center;
+  background: #e6e6fa; padding: 5px;
+}
+.infobox th, .infobox td { padding: 5px 8px; border: 1px solid #a2a9b1; vertical-align: top; }
+.infobox th { text-align: left; background: #f0f0f0; width: 35%; }
+.infobox img { max-width: 100%; height: auto; }
+
+.article-image {
+  background: #f8f9fa; border: 1px solid #c8ccd1;
+  padding: 4px; margin: 8px; text-align: center; font-size: 13px;
+}
+.article-image img { max-width: 100%; height: auto; }
+.references { font-size: 13px; }
+.references li { margin-bottom: 8px; }
+.clear { clear: both; }
+
+.toc {
+  background: #f8f9fa; border: 1px solid #a2a9b1;
+  display: table; padding: 12px; margin-bottom: 20px;
+}
+.toc-title { font-weight: bold; text-align: center; }
+.toc ul { list-style: none; padding-left: 20px; margin: 6px 0; }
+
+/* ========== FOOTER ========== */
+footer {
+  background: #fff; border-top: 1px solid #a2a9b1;
+  margin-top: 20px; padding: 16px; text-align: center; font-size: 14px;
+}
+footer a { margin: 0 8px; }
+footer img { width: 24px; height: 24px; vertical-align: middle; }
